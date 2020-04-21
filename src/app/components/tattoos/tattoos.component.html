@@ -1,0 +1,16 @@
+<div class="card-columns mt-5">
+
+  <div class="card animated bounce" style="background-color: #1a1a1a;"
+  *ngFor="let tattoo of _tattoosService.info; let i = index" >
+    <img [src]="tattoo.img" class="card-img-top" [alt]="tattoo.name">
+    <div class="card-body">
+      <h5 class="card-title text-white">{{tattoo.name}}</h5>
+      <p class="card-text text-white">{{tattoo.desc}}</p>
+      <p class="card-text"><small class="text-muted">{{tattoo.date}}</small></p>
+      <a [routerLink]="['/tattoo', i]" class="btn btn-outline-info btn-block">Read more</a>
+    </div>
+  </div>
+
+
+</div>
+

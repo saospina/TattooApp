@@ -1,0 +1,24 @@
+<h1 class="mt-5 text-white">{{tattoo.name}}</h1>
+<hr>
+
+<div class="row animated bounce">
+  <div class="col-md-5">
+    <img class="img-fluid" [src]="tattoo.img" [alt]="tattoo.name">
+    <br><br>
+    <a class="btn btn-outline-info btn-block" [routerLink]="['/tattoos']">Back to Tattoos</a>
+  </div>
+  <div class="col-md-7">
+    <h3 class="text-white">{{tattoo.name}}</h3>
+    <hr>
+    <p class="text-white">{{tattoo.desc}}</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-thumbnail float-right" src="/src/assets/img/logo.jpg" alt="machine icon">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
